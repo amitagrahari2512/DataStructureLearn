@@ -5,6 +5,7 @@ import java.util.Arrays;
 public class BestTimeBuySellStockTwoTransaction {
 	public static void main(String[] args) {
 		int[] arr = {10, 22, 5, 75, 65, 80};
+		
 		int maxProfit = findMaxProfit(arr, arr.length);
 		System.out.println("Max Profit : " + maxProfit);
 	}

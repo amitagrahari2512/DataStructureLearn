@@ -19,7 +19,7 @@ public class MatrixSpiralForm {
 		int left = 0;
 		int right = arr[0].length - 1;
 		
-		while(top <= right && left <= right) {
+		while(top <= bottom && left <= right) {
 			//print left to right
 			for(int i = left ; i <= right ; i++) {
 				System.out.println(arr[top][i]);

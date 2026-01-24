@@ -4,7 +4,7 @@ import java.util.Iterator;
 import java.util.LinkedList;
 import java.util.Stack;
 
-
+//Iterative DFS
 public class Graph {
 	private int v;
 	private LinkedList<Integer> adj[];

@@ -38,6 +38,17 @@ public class TransposeGraph {
 		}
 	}
 	
+	
+	public void printGraphWithoutTranspose() {
+		for(int i = 0 ;i < vertices ; i++) {
+				System.out.print(i + " ----> ");
+				for(int j = 0; j<actual[i].size() ;j++) {
+					System.out.print(actual[i].get(j) + " ");
+				}
+				System.out.println();
+		}
+	}
+	
 	public void printGraph() {
 		for(int i = 0 ;i < vertices ; i++) {
 				System.out.print(i + " ----> ");
@@ -59,6 +70,8 @@ public class TransposeGraph {
         t.addEdge(4, 1, false);
         t.addEdge(4, 3, false);
         
+        t.printGraphWithoutTranspose();
+        System.out.println("** After Transpose **");
         t.getTranspose();
         t.printGraph();
 	}
