@@ -4,7 +4,7 @@ import java.util.Arrays;
 
 //input =  {1,2,3,4,5,6,7}
 //output = {5,6,7,1,2,3,4}
-public class RotateArrayByKStreps {
+public class RotateArrayByKSteps {
 
 	public static void main(String[] args) {
 		int[] arr = {1,2,3,4,5,6,7};
@@ -30,6 +30,7 @@ public class RotateArrayByKStreps {
 			arr[i] = arr[j];
 			arr[j] = temp;
 		}
+		
 		
 		for(int i = 0 , j = n - 1; i < j ; i++, j--) {
 			int temp = arr[i];
