@@ -18,7 +18,7 @@ public class SearchElementFromRotatedArray {
 			if(arr[mid] == key)
 				return mid;
 			
-			if(arr[mid] >= arr[l]) {
+			if(arr[mid] >= arr[l]) { //left Sorted
 				if(key >= arr[l] && key < arr[mid] ) {
 					h = mid - 1;
 				}
@@ -26,7 +26,7 @@ public class SearchElementFromRotatedArray {
 					l = mid + 1;
 				}
 			}
-			else {
+			else { //Right Sorted
 				if(key > arr[mid] && key <= arr[h]) {
 					l = mid + 1;
 				}

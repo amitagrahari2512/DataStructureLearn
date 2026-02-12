@@ -15,7 +15,8 @@ public class LFUImplementation {
 	    System.out.print(cache.get(3) + " ");
 	  	System.out.print(cache.get(4) + " ");
 	    cache.put(5, 5);
-		
+	    System.out.print(cache.get(5) + " ");
+	    System.out.print(cache.get(1) + " ");
 	}
 }
 
