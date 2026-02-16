@@ -27,12 +27,13 @@ public class WordSearch {
 		}; 
 		
 		String word = "ABCCED";
-		
-		System.out.println(word + " - Word Exist : " + dfs(board, word, 0, 0, 0));
+		System.out.println(word + " - Word Exist : " + exist(board, word));
 		
 		word = "KVS";
-		System.out.println(word + " - Word Exist : " + dfs(board, word, 0, 0, 0));
+		System.out.println(word + " - Word Exist : " + exist(board, word));
+		
 	}
+	
 	
 	public static boolean exist(char[][] board , String word) {
 		int n = board.length;
@@ -46,6 +47,7 @@ public class WordSearch {
 		}
 		return false;
 	}
+	
 	
 	public static boolean dfs(char[][] board , String word, int i, int j, int index) {
 		if(index == word.length()) return true;
