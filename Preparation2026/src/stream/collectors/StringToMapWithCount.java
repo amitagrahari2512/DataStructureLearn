@@ -14,5 +14,10 @@ public class StringToMapWithCount {
 		String str = "banana apple apple banana chiku chiku";
 		Map<String, Long> map = Arrays.stream(str.split(" ")).collect(Collectors.groupingBy(Function.identity(), Collectors.counting()));
 		System.out.println(map);
+		
+		
+		//Same Result
+		Map<String, Long> map1 = Arrays.stream(str.split(" ")).collect(Collectors.groupingBy(x -> x, Collectors.counting()));
+		System.out.println(map1);
 	}
 }
